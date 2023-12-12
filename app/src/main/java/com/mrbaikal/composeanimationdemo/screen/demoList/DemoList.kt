@@ -53,7 +53,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo1") }
+                onClick = { navController.navigate("demo3") }
             ) {
                 Text(
                     text = "3",
@@ -63,7 +63,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo2") }
+                onClick = { navController.navigate("demo4") }
             ) {
                 Text(
                     text = "4",
@@ -78,7 +78,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo1") }
+                onClick = { navController.navigate("demo5") }
             ) {
                 Text(
                     text = "5",
@@ -88,7 +88,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo2") }
+                onClick = { navController.navigate("demo6") }
             ) {
                 Text(
                     text = "6",
@@ -103,7 +103,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo1") }
+                onClick = { navController.navigate("demo7") }
             ) {
                 Text(
                     text = "7",
@@ -113,7 +113,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo2") }
+                onClick = { navController.navigate("demo8") }
             ) {
                 Text(
                     text = "8",
@@ -128,7 +128,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo1") }
+                onClick = { navController.navigate("demo9") }
             ) {
                 Text(
                     text = "9",
@@ -138,7 +138,7 @@ fun DemoList(navController: NavHostController) {
             Button(
                 modifier = Modifier.size(80.dp),
                 shape = RoundedCornerShape(20.dp),
-                onClick = { navController.navigate("demo2") }
+                onClick = { navController.navigate("demo10") }
             ) {
                 Text(
                     text = "10",
