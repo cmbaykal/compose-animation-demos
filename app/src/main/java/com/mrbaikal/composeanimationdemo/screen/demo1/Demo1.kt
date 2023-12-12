@@ -9,16 +9,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.KeyboardArrowUp
-import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -49,7 +44,7 @@ import com.mrbaikal.composeanimationdemo.ui.theme.redColor
     - For understand of state animations, used animation states were connected to each other
  */
 
-val list1 = listOf(
+val list = listOf(
     "Section Item 1",
     "Section Item 2",
     "Section Item 3",
@@ -66,9 +61,9 @@ val list1 = listOf(
 fun Demo1() {
     var maxWidth by remember { mutableIntStateOf(0) }
     var maxHeight by remember { mutableIntStateOf(0) }
+
     val maxWidthDp = with(LocalDensity.current) { maxWidth.toDp() }
     val maxHeightDp = with(LocalDensity.current) { maxHeight.toDp() }
-
 
     var leftDrawerState by remember { mutableStateOf(false) }
     var bottomDrawerState by remember { mutableStateOf(false) }
@@ -150,37 +145,14 @@ fun Demo1() {
                 .fillMaxHeight()
                 .width(leftDrawerWidth)
                 .align(Alignment.CenterStart),
-            list = list1
+            list = list
         )
         DummyDrawer(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(bottomDrawerHeight)
                 .align(Alignment.BottomCenter),
-            list = list1
+            list = list
         )
-    }
-}
-
-@Composable
-fun DummyDrawer(modifier: Modifier, list: List<String>) {
-    LazyColumn(
-        modifier = Modifier
-            .background(Color.DarkGray)
-            .then(modifier),
-        state = rememberLazyListState()
-    ) {
-        items(list) {
-            Button(
-                modifier = Modifier
-                    .padding(vertical = 10.dp, horizontal = 20.dp)
-                    .fillMaxWidth(),
-                onClick = { }
-            ) {
-                Text(
-                    text = it
-                )
-            }
-        }
     }
 }
