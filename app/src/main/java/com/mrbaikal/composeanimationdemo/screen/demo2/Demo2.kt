@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mrbaikal.composeanimationdemo.ui.theme.greenColor
+import com.mrbaikal.composeanimationdemo.ui.theme.orangeColor
 
 val pieChartData = listOf(
     ChartData("Data 1", 40, Color.Red),
@@ -36,7 +37,7 @@ fun Demo2() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(greenColor),
+            .background(orangeColor),
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

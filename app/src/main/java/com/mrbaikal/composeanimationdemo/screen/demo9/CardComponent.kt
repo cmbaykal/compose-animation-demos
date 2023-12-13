@@ -97,7 +97,7 @@ fun CardComponent(
             .padding(40.dp)
             .graphicsLayer {
                 rotationY = cardRotation
-                cameraDistance = 30f
+                cameraDistance = 10f * density
             }
             .shadow(elevation = 4.dp, shape = RoundedCornerShape(20.dp), ambientColor = Color.Black)
             .clip(RoundedCornerShape(20.dp))

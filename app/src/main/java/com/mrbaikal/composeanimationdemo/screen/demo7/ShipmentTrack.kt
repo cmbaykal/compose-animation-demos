@@ -118,8 +118,7 @@ fun ShipmentTrackPreview() {
     )
 
     ShipmentTrack(
-        modifier = Modifier
-            .size(250.dp, 400.dp),
+        modifier = Modifier.size(250.dp, 400.dp),
         steps = list
     )
 }
