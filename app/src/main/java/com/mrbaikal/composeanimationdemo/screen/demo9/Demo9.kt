@@ -143,6 +143,7 @@ fun Demo9() {
                 keyboardType = KeyboardType.Number
             ),
             keyboardActions = KeyboardActions {
+                cvcFocusRequester.freeFocus()
                 keyboardController?.hide()
             }
         )

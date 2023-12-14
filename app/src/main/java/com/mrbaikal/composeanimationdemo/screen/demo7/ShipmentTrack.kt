@@ -81,7 +81,7 @@ fun ShipmentTrack(
             val offset = Offset((roadWidth - 10.dp).toPx(), 20.dp.toPx() + (index * maxHeight / steps.size))
             val textOffset = Offset(offset.x + 30.dp.toPx(), offset.y + 2.dp.toPx())
             drawRoundRect(
-                color = Color.LightGray,
+                color = roadColor,
                 topLeft = offset,
                 size = Size(20.dp.toPx(), 30.dp.toPx()),
                 cornerRadius = CornerRadius(10.dp.toPx())
